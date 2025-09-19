@@ -22,13 +22,13 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="./imgs/GREEN BITE.png" alt="GreenBite Logo">
+                <img src="./imgs/GREEN_BITE.png" alt="GreenBite Logo">
             </div>
             
             <div class="hamburger">&#9776;</div>
             <div class="navlinks">
-                <a href="index.html">Home</a></li>
-                <a href="healthy recipes.html">Healthy Recipes</a>
+                <a href="index.html">Home</a>
+                <a href="healthy_recipes.html">Healthy Recipes</a>
                 <a href="calculator.html">Calorie & Nutrition Calculator</a>
                 <a href="workout.html">Workout Generator</a>
                 <a href="mindfulness.html">Mindfulness</a>
@@ -44,9 +44,7 @@
             <div class="herotext">
             <h1>Welcome To GreenBite</h1>
             <p id="slogan">Your path to a healthier body and a peaceful mind.</p>
-            <a href="healthy recipes.html">
-                <button >Explore recipies</button>
-            </a>
+                <button onclick="location.href='healthy_recipes.html'" >Explore recipies</button>
             </div>
              <img src="./imgs/heroimgs5.jpg" alt="health">
         </section>
@@ -67,6 +65,7 @@
         <h3>Join Our Newsletter</h3>
         <p>Get weekly health tips and recipes straight to your inbox.</p>
         <form id="newsletterForm">
+            <label for="newsletterEmail"></label>
             <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
             <button type="submit">Subscribe</button>
         </form>
