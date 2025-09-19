@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite | Mindfulness</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./mindfulness.css">
+     <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <!--header and navigation-->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./imgs/GREEN BITE.png" alt="GreenBite Logo">
+            </div>
+            <div class="hamburger">&#9776;</div>
+            <div class="navlinks">
+                <a href="index.html">Home</a></li>
+                <a href="healthy recipes.html">Healthy Recipes</a>
+                <a href="calculator.html">Calorie & Nutrition Calculator</a>
+                <a href="workout.html">Workout Generator</a>
+                <a href="mindfulness.html">Mindfulness</a>
+                <a href="contact.html">Contact & Feedback</a>
+            </div>
+         
+           
+        </nav>
+    </header>
+
+    
+    <main class="mindfulContent">
+        <h1>Let Us Practice Mindfulness</h1>
+        <section class="breathing"><!--breathing circle-->
+            <div class="circle"></div> <!--the which shws breath in and out -->
+            <br><p id="breatheText">Inhale</p> 
+        </section>
+        <section class="mediTimer"><!--timer-->
+            <br><h2>Meditation Timer</h2>
+            <label for="timer">Select Minutes:</label>
+            <input type="number" id="timer" min="1" max="60" value="5"> <!--default value 5 mins-->
+            <button id="startTimer">Start</button>
+            <p id="displayTime">00:00</p>
+        </section>
+        <section class="sounds"><!--sounds-->
+            <h2>Ambient Sounds For You</h2>
+            <button id="playSound">Play</button>
+            <audio id="sound" src="./imgs/mind relaxing sound.mp3" type="audio/mp3"></audio>
+         </section><!--sessions completed,stored using local storage-->
+         <section class="storageTracker">
+           <br><h2>Completed Sessions</h2>
+           <p id="sessionCount">0</p>
+         </section>
+    </main>
+    
+    <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly health tips and recipes straight to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+       <p id="newsletterMsg"></p>
+       </div>
+           <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p>📍 GreenBite HQ — Colombo</p>
+                <a href="https://workspace.google.com/intl/en-US/gmail/" class="emailLink"> <p>📧 email: greenbite.lk</p></a>
+                <p>☎️ contact: 0118453532</p>
+            </div>
+        </div>
+      <div id="allRights">
+        <br><p>&copy; 2025 GreenBite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./mindfulness.js"></script>
+
+</body>
+</html>

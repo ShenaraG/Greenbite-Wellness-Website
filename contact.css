@@ -1,0 +1,115 @@
+h1{
+    font-size: larger;
+}
+P{
+    font-size: medium;
+    font-weight: lighter;
+    
+}
+.hero{
+  margin: 10px;
+  border-radius: 16px;
+  text-align: left;
+}
+.contact{
+   
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px;
+    background-color: #000;
+    color: #fff;
+    margin: 10px;
+    
+}
+.leftColumn{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.rightColumn {
+    flex: 0 0 60%; 
+    min-width: 350px; 
+}
+
+.feedbackForm form{
+    flex: 1;
+    background-image: url(./imgs/formbackground.jpg);
+    padding: 20px;
+    border-radius: 20px;
+    align-content: start;
+    margin: 10px;
+    
+}
+
+form label{
+    display: block;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #fff;;
+   
+    
+}
+
+form input, form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 4px solid #C5E1A5 ;
+    border-radius: 15px;
+
+}
+ form button{
+   
+    align-items:end;
+    margin-top: 25px;
+    
+ }
+
+
+
+.map iframe{
+ width:100%;
+height:300px;
+border:0;
+border-radius: 20px;
+margin-top: 15px;
+} 
+
+
+.faqItem {
+  margin-top: 15px;
+ 
+  
+}
+
+.faq_Q {
+  cursor: pointer;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #F1F8E9 0%, #C5E1A5 50%, #AED581 100%);
+  border-radius: 6px;
+  height: 50px;
+  align-content: center;
+  transition: background 0.3s;
+  color: #212121;
+ 
+}
+
+.faq_A {
+  display: none;
+  margin-left: 20px;
+  color: #fff;
+ 
+}
+.savedFeedback{
+  margin-top: 20px;
+  padding: 15px;
+  border-radius:10px ;
+  color: #fff;
+  font-weight: bold;
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite | Healthy Recipes</title>
+      <!--favicon-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleRecipes.css">
+     <link rel="stylesheet" href="./responsive.css">
+      <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <!--header and navigation-->
+    <header>
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <nav>
+            <div class="logo">
+                <img src="./imgs/GREEN BITE.png" alt="GreenBite Logo">
+            </div>
+             <div class="hamburger">&#9776;</div>
+            <div class="navlinks">
+                <a href="index.html">Home</a></li>
+                <a href="healthy recipes.html">Healthy Recipes</a>
+                <a href="calculator.html">Calorie & Nutrition Calculator</a>
+                <a href="workout.html">Workout Generator</a>
+                <a href="mindfulness.html">Mindfulness</a>
+                <a href="contact.html">Contact & Feedback</a>
+            </div>
+           
+        </nav>
+    
+    </header>
+
+    
+    <main class="recipesContainer">
+        <h1>Healthy Recipes</h1>
+        <div class="filter"><!--searching and filtering -->
+            <input type="text" id="searchRecipes" placeholder="Search recipes...">
+            <select id="filterCategory">
+                <option value="All">All</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Dessert">Dessert</option>
+            </select>
+        </div>
+
+        <div class="recipesGrid" id="recipes_Grid"></div><!--class is for css and id for js stuff-->
+    </main>
+            <div class="modal" id="recipeModal"> <!--shows the full recipes when clicked-->
+                <div class="modalContent">
+                    <span class="close" id="closeModal">&times;</span> <!--close sign after opening a full recipe-->
+                    <!--<div id="_ModalContent">-->
+                    <h2 id="modalTitle"></h2>
+                    <img id="modalImage" alt="recipe img">
+                    <p id="modalDescrip"></p>
+
+                    <h3>Ingredients</h3>
+                    <ul id="modalIngredients"></ul>
+
+                    <h3>Steps</h3>
+                    <ol id="modalsteps"></ol>
+
+                    <h3>Nutrition Information</h3>
+                    <table id="modalNutrition">
+                        <thead>
+                        <tr>
+                            <th> Calories </th>
+                            <th> Carbs (g) </th>
+                            <th> Protein (g) </th>
+                            <th> Fat (g) </th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            
+     <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly health tips and recipes straight to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+       <p id="newsletterMsg"></p>
+       </div>
+           <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p>📍 GreenBite HQ — Colombo</p>
+                <a href="https://workspace.google.com/intl/en-US/gmail/" class="emailLink"> <p>📧 email: greenbite.lk</p></a>
+                <p>☎️ contact: 0118453532</p>
+            </div>
+        </div>
+      <div id="allRights">
+        <br><p>&copy; 2025 GreenBite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    
+    <script src="./recipeScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.mindfulContent{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    text-align: center;
+    
+    
+    
+    
+}
+
+.mindfulContent h1{
+    color:#2E7D32;
+}
+
+
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(#9cfe46,#87f3ed);
+  margin: 20px auto;
+  transition: transform 4s ease-in-out;
+}
+
+#breatheText{
+    font-size: 32px;
+    color: #000;
+    font-weight: bolder;
+    margin-top: 10px;
+    
+}
+#timer{
+    border-radius: 16px;
+    text-align: center;
+    background-color: #87f3ed;
+    border-color: #fff;
+    
+}
+
+#displayTime{
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+#sessionCount{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.mediTimer, .sounds , .storageTracker{
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 20px;
+  background: transparent;
+  cursor: pointer;
+  
+}

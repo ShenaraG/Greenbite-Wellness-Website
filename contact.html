@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite | Contact & Feedback </title>
+      <!--favicon-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./contact.css">
+     <link rel="manifest" href="./manifest.json">
+    
+</head>
+<body>
+    <!--header and navigation-->
+    <header>
+      <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+              <nav>
+            <div class="logo">
+                <img src="./imgs/GREEN BITE.png" alt="GreenBite Logo">
+            </div>
+            <div class="hamburger">&#9776;</div>
+            <div class="navlinks">
+                <a href="index.html">Home</a></li>
+                <a href="healthy recipes.html">Healthy Recipes</a>
+                <a href="calculator.html">Calorie & Nutrition Calculator</a>
+                <a href="workout.html">Workout Generator</a>
+                <a href="mindfulness.html">Mindfulness</a>
+                <a href="contact.html">Contact & Feedback</a>
+            </div>
+            
+        </nav>
+    </header>
+
+     <section class="hero">
+            <div class="herotext">
+            <h1>Get to know us</h1>
+            <br><p>GreenBite is your companion for holistic wellness, offering personalized nutrition plans, workout routines, and mindfulness practices. 
+                We believe healthy living should be simple, enjoyable, and sustainable for everyone. 
+                Our mission is to empower you with tools and knowledge to nourish both body and mind, 
+                creating lasting wellness habits that fit your unique lifestyle and goals.</p>
+            </div>
+             <img src="./imgs/abtUS.jpg" alt="health">
+        </section>
+    <main class="contact">
+       <section class="leftColumn">
+        <section class="feedbackForm">
+            <h2>Contact & Feedback</h2>
+            <form id="feedback">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Evelyn" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="evelyn@gmail.com" required>
+              <label for="feedbackMsg">Your Feedback</label>
+              <input type="text" id="feedbackMsg" placeholder="Type your message here..." required>
+              <button id="feedbackButton" type="submit">Submit</button>
+              <button id="clearAll">Clear All </button>
+            </form>
+            <div id="savedItems" class="savedFeedback"></div>
+           </section>
+        </section>
+        <aside class="rightColumn"> <!--aside the main box still is a part of main section-->
+           
+            <div class="map">
+                <h2>Map</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.6302503084!2d79.85620549999999!3d6.921838650000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1758084261494!5m2!1sen!2slk"></iframe>
+            </div>
+            <div class="faq">
+                <br><h2>FAQ</h2>
+                <div class="faqItem"> <!--includes one q and a im each item-->
+                  <div class="faq_Q">Q: What is GreenBite?</div> <!--cls tht includes all the qs-->
+                  <div class="faq_A" id="A1">A: A wellness platform offering healthy recipes, workout plans, and mindfulness resources.</div><!--cls tht includes all the answers-->
+                </div>
+                <div class="faqItem"> 
+                  <div class="faq_Q">Q: Is GreenBite free to use?</div>
+                  <div class="faq_A" id="A2">A: Yes! All our basic features are completely free.</div>
+                </div>
+                <div class="faqItem"> 
+                  <div class="faq_Q">Q: Do you offer personalized meal plans?</div>
+                  <div class="faq_A" id="A3">A: Not yet, but we're working on this feature for future updates.</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+     <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly health tips and recipes straight to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+       <p id="newsletterMsg"></p>
+       </div>
+           <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p>📍 GreenBite HQ — Colombo</p>
+                <a href="https://workspace.google.com/intl/en-US/gmail/" class="emailLink"> <p>📧 email: greenbite.lk</p></a>
+                <p>☎️ contact: 0118453532</p>
+            </div>
+        </div>
+      <div id="allRights">
+        <br><p>&copy; 2025 GreenBite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    <script src="./contact.js"></script>
+</body>
+</html>

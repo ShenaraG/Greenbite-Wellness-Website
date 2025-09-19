@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite | Workout Generator</title>
+    <!--fav icon-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./workout.css">
+     <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <!--header and navigation-->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./imgs/GREEN BITE.png" alt="GreenBite Logo">
+            </div>
+            <div class="hamburger">&#9776;</div>
+            <div class="navlinks">
+                <a href="index.html">Home</a></li>
+                <a href="healthy recipes.html">Healthy Recipes</a>
+                <a href="calculator.html">Calorie & Nutrition Calculator</a>
+                <a href="workout.html">Workout Generator</a>
+                <a href="mindfulness.html">Mindfulness</a>
+                <a href="contact.html">Contact & Feedback</a>
+            </div>
+            
+            
+        </nav>
+    </header>
+
+    
+    <main class="workoutGeneratorResults">
+        <h1>Workout Generator</h1>
+        <div class="generatorContent">
+            <form id="workoutForm">
+                <br><p>Please select options to plan your Workout</p>
+                <label for="bodyPart">Body Part</label>
+                <select type="option" id="bodyPart" required>
+                    <option value="arms">Arms</option>
+                    <option value="legs">Legs</option>
+                    <option value="fullBody">Full Body</option>
+                </select>
+                <label for="equipment">Equipment</label>
+                <select type="option" id="equipment" required>
+                    <option value="none">None</option>
+                    <option value="dumbbells">Dumbbells</option>
+                </select>
+                <label for="duration">Duration</label>
+                <select type="option" id="duration" required>
+                    <option value="15">15 minutes</option>
+                    <option value="30">30 minutes</option>
+                    <option value="45">45 minutes</option>
+                </select>
+                <label for="level">Level</label>
+                <select type="option" id="level" required>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="all">All</option>
+                </select>
+                <button type="submit">Generate Workout Plan</button>
+            
+            </form>
+    
+            <div class="workoutResults" id="_Wresults"><h2>Your Workout Plan</h2></div>
+        </div>
+    </main>
+    
+       <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly health tips and recipes straight to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+       <p id="newsletterMsg"></p>
+       </div>
+           <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p>📍 GreenBite HQ — Colombo</p>
+                <a href="https://workspace.google.com/intl/en-US/gmail/" class="emailLink"> <p>📧 email: greenbite.lk</p></a>
+                <p>☎️ contact: 0118453532</p>
+            </div>
+        </div>
+      <div id="allRights">
+        <br><p>&copy; 2025 GreenBite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    <script src="./workout.js"></script>
+</body>
+</html>

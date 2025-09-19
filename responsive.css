@@ -1,0 +1,147 @@
+/*Responsive Fix for the header footer and index.html*/
+@media (max-width: 768px) {
+  .navlinks {
+     display: none;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 4px 8px;
+    z-index: 1001;
+    background-color:#f4fff0;
+    border-radius: 16px;
+    
+  
+  }
+  .navlinks.active{ /*when clicked to show */
+    display: flex;
+  }
+
+  .navlinks a {
+    display:block;
+    margin: 10px 0;
+    font-size: 16px;
+  }*/
+
+
+  .logo img{
+    height: 100px;
+  }
+  .hamburger{
+    display: block;
+    z-index: 1002;
+  
+   
+  }
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+  .herotext{
+    margin: 20px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .healthTips {
+   flex-direction: column;
+   padding: 20%;
+   height: 1000px;
+  }
+  
+
+  .tipsimgs {
+    width: 90%;
+    height: 400px;
+    margin: 10px 0;
+          
+  }
+
+  .tipstext {
+    width: 100%;
+    margin: 15px 0;
+    font-size: 16px;
+    
+  }
+
+/*responsive fix for recipes page*/
+  
+  .recipesContainer{
+    grid-template-columns: 1fr;
+  }
+  .filter{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*calculator fix*/
+  .calculatorContent{
+    flex-direction: column;
+  }
+
+  .generatorContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  /*about us*/
+  .contact {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+  }
+  .rightColumn {
+    flex: 1;
+    min-width: 100%;
+  }
+            
+          
+  .map iframe {
+  height: 250px;
+  }
+/*footer part*/
+  .footer-container {
+    flex-direction: column;
+    height: auto; 
+    gap: 20px;
+  }
+  
+  .newsletter, .footer-contact {
+    width: 100%;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-contact p {
+    font-size: 0.95rem;
+  }
+  
+  #allRights {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+

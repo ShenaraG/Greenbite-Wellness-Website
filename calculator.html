@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite | Calorie & Nutrition Calculator</title>
+      <!--favicon-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <!--CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./calculatorstyle.css">
+    <link rel="stylesheet" href="./responsive.css">
+     <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!--header and navigation-->
+    <header>
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <nav>
+            <div class="logo">
+                <img src="./imgs/GREEN BITE.png" alt="GreenBite Logo">
+            </div>
+            <div class="hamburger">&#9776;</div>
+            <div class="navlinks">
+                <a href="index.html">Home</a></li>
+                <a href="healthy recipes.html">Healthy Recipes</a>
+                <a href="calculator.html">Calorie & Nutrition Calculator</a>
+                <a href="workout.html">Workout Generator</a>
+                <a href="mindfulness.html">Mindfulness</a>
+                <a href="contact.html">Contact & Feedback</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    
+    <main class="calculatorFormsResults">
+        <h1>Calculate your Calories and Nutritions</h1>
+        <div class="calculatorContent">
+            <form id="formContent">
+                
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" placeholder="18" required>
+
+                    <label for="gender">Gender:</label>
+                    <select type="option" id="gender" placeholder="male/female" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="height">Height(cm)</label>
+                    <input type="number" id="height" placeholder="170" required>
+
+                    <label for="weight">Weight(kg)</label>
+                    <input type="number"  id="weight" placeholder="50" required>
+
+                    <label for="activityLevel">Activity Level</label>
+                    <select type="option" id="activityLevel" required>
+                        <option value="1.2">Sedentary(little or no exercise)</option>
+                        <option value="1.375">Lightly Active(light exercise/sports 1-3 days/week)</option>
+                        <option value="1.55">Moderately Active(3-5 days/week)</option>
+                        <option value="1.725">Very Active(hard exercise 6-7 days/week)</option>
+                        <option value="1.9">Super Active(very hard exercise/physical job)</option>
+                    </select>
+                    <button type="submit">Calculate</button>
+                    
+            
+            </form>
+        
+            <div class="results" id="_results">
+                <h2>Results</h2>
+                    <p>BMR (Basal Metabolic Rate):<span id="bmrResults">--</span>  kcal/day</p> <!--"-- means its empty"-->
+                    <div class="bar"><div id="bmrBar" class="progressBar"></div></div>
+                    <br><p>TDEE(Total Daily Energy Expenditure):<span id="tdeeResults">--</span>  kcal/day</p>
+                    <div class="bar"><div id="tdeeBar" class="progressBar"></div></div>
+                    <br><br><h3>Macronutritients</h3>
+                        <br><p>Carbohydrates: <span id="CarbohydratesResults">--</span> g</p>
+                        <div class="bar"><div id="carbohydrateBar" class="progressBar"></div></div>
+                        <br><p>Proteins: <span id="proteinsResults">--</span>  g</p>
+                        <div class="bar"><div id="proteinBar" class="progressBar"></div></div>
+                        <br><p>Fats: <span id="fatsResults">--</span>  g</p>
+                        <div class="bar"><div id="fatBar" class="progressBar"></div></div>
+
+            </div>
+        </div>
+    </main>
+    
+     <footer class="footer">
+    <div class="footer-container">
+      <div class="newsletter">
+        <h3>Join Our Newsletter</h3>
+        <p>Get weekly health tips and recipes straight to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+       <p id="newsletterMsg"></p>
+       </div>
+           <div class="footer-contact">
+                <h3>Contact Information</h3>
+                <p>📍 GreenBite HQ — Colombo</p>
+                <a href="https://workspace.google.com/intl/en-US/gmail/" class="emailLink"> <p>📧 email: greenbite.lk</p></a>
+                <p>☎️ contact: 0118453532</p>
+            </div>
+        </div>
+      <div id="allRights">
+        <br><p>&copy; 2025 GreenBite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+
+    <script src="./calculator.js"></script>
+</body>
+</html>

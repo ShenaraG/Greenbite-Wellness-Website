@@ -1,0 +1,138 @@
+.calculatorFormsResults {
+    padding: 30px;
+    text-align: justify;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: transparent;
+    border-radius: 15px;
+    
+}
+
+.calculatorFormsResults h1 {
+    color: #2E7D32;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.calculatorContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.calculatorContent form {
+    flex: 1;
+    background-color: #212121;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.calculatorContent input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #C5E1A5;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+}
+
+.calculatorContent form input:focus, form select:focus {
+    outline: none;
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.3);
+}
+
+
+.results {
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    background: url(./imgs/cal.jpg);
+    background-size: cover;
+    font-size: large;
+    font-weight: bold;
+    color: #212121;
+    position: relative;
+}
+
+.results h2 {
+    color: #2E7D32;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.results h3 {
+    color: #2E7D32;
+    font-size: 1.3rem;
+    margin: 25px 0 15px;
+    text-align: center;
+}
+
+.results p {
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+.results span {
+    font-weight: 700;
+    color: #2E7D32;
+    font-size: 1.1rem;
+}
+
+.bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 18px;
+    position: relative;
+    margin: 8px 0 15px;
+}
+
+.progressBar {
+    height: 100%;
+    width: 0;
+    transition: width 0.6s ease;
+    border-radius: 10px;
+}
+
+#bmrBar { 
+    background: #9C27B0; 
+}    
+
+#tdeeBar { 
+    background: rgb(230, 230, 46); 
+} 
+
+#carbohydrateBar { 
+    background: #66bb6a; 
+}   
+
+#proteinBar { 
+    background: #00BCD4; 
+} 
+
+#fatBar { 
+    background: #ff7043; 
+}  
