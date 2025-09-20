@@ -1,7 +1,7 @@
 {
   "name": "GREENBITE",
   "short_name": "GREENBITE",
-   "start_url": "/",
+   "start_url": "./",
   "icons": [
     {
       "src": "web-app-manifest-192x192.png",
